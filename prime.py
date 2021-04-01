@@ -1,4 +1,5 @@
 import time
+import math
 
 def main():
     n = 100000
@@ -12,7 +13,7 @@ def main():
     print("Found ", numPrimes, " primes in ", msec, "ms")
 
 def isPrime(num):
-    for i in range(2, int(num / 2)):
+    for i in range(2, int(math.sqrt(num))):
         if(num % i == 0):
             return False
     return True
