@@ -7,8 +7,8 @@ To give me a good benchmark of the performance of various programming languages,
 ### Performance Charts
 I ran each of the programs on a Ryzen 7 3800x processor, and got the following average results:
 
-1) C: 768ms
-2) Java: 774ms
-3) Python: 20671.82ms
+1) Java: 13ms
+2) C: 67ms
+3) Python: 273ms
 
 There must be some major optimization I'm missing for the python code, as it is <b>SIGNIFICANTLY</b> slower than the alternatives.
