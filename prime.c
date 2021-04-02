@@ -4,9 +4,9 @@
 #include <math.h>
 
 
-bool isPrime(int n) {
-    for(int i = 2; i < sqrt(n); i++) {
-        if(n % i == 0) {
+bool isPrime(int* n) {
+    for(int i = 2; i < sqrt(*n); i++) {
+        if(*n % i == 0) {
             return false;
         }
     }
@@ -14,12 +14,11 @@ bool isPrime(int n) {
 }
 
 int main() {
-    int n = 100000;
-    int primes[1000];
+    int n = 1000000;
     int numPrimes = 0;
     clock_t start = clock();
     for(int i = 1; i < n; i++) {
-        if(isPrime(i)) {
+        if(isPrime(&i)) {
             // primes[numPrimes] = i;
             numPrimes++;
         }

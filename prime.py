@@ -2,7 +2,7 @@ import time
 import math
 
 def main():
-    n = 100000
+    n = 1000000
     numPrimes = 0
     start = time.clock()
     for i in range(1, n):
@@ -13,8 +13,11 @@ def main():
     print("Found ", numPrimes, " primes in ", msec, "ms")
 
 def isPrime(num):
-    for i in range(2, int(math.sqrt(num))):
+    maxCheck = int(math.sqrt(num))
+    for i in range(2, maxCheck):
         if(num % i == 0):
             return False
     return True
-main()
+
+if __name__ == "__main__":
+    main()

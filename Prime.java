@@ -1,7 +1,7 @@
 public class Prime {
 
     public static void main(String[] args) {
-        int n = 100000;
+        int n = 1000000;
         int numPrimes = 0;
         long start = System.currentTimeMillis();
         for(int i = 1; i < n; i++) {
